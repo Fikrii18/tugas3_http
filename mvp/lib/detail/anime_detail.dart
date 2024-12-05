@@ -48,6 +48,7 @@ class _DetailScreenState extends State<DetailScreen> {
                 ? Center(child: Text("Error ${_errorMessage}"))
                 : _detailData != null
                     ? Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Image.network(_detailData!['images'][0] ??
                               'https://placehold.co/600x400'),
